@@ -5,6 +5,7 @@ import LibrariesList from "./components/Libraries/LibrariesList";
 import { BooksContextProvider } from "./contexts/BooksContext";
 import booksData from "./data/books.json";
 
+import { LibrariesContextProvider } from "./contexts/LibrariesContext";
 import librariesData from "./data/libraries.json";
 
 function App() {
@@ -14,7 +15,9 @@ function App() {
       <main className="container mt-5">
         <div className="row">
           <BooksList />
-          <LibrariesList libraries={librariesData} />
+          <LibrariesContextProvider initialData={librariesData}>
+            <LibrariesList />
+          </LibrariesContextProvider>
         </div>
       </main>
     </BooksContextProvider>

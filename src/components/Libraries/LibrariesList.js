@@ -1,6 +1,9 @@
+import { useContext } from "react";
 import Library from "./Library";
+import { LibrariesContext } from "../../contexts/LibrariesContext";
 
-function LibrariesList({ libraries }) {
+function LibrariesList() {
+  const { libraries } = useContext(LibrariesContext);
   const listItems = libraries.map((library) => (
     <Library key={library.id} library={library} />
   ));
