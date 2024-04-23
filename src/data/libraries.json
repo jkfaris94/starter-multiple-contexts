@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "address": {
+      "street": "78 Ebony Court",
+      "city": "Elfrida",
+      "state": "TX"
+    },
+    "name": "Elfrida Library",
+    "addressString": "78 Ebony Court, Elfrida, TX",
+    "favorite": false
+  },
+  {
+    "id": 2,
+    "address": {
+      "street": "46 Christopher Avenue",
+      "city": "Sunriver",
+      "state": "TX"
+    },
+    "name": "Sunriver Library",
+    "addressString": "46 Christopher Avenue, Sunriver, TX",
+    "favorite": false
+  },
+  {
+    "id": 3,
+    "address": {
+      "street": "24 Randolph Street",
+      "city": "Frierson",
+      "state": "TX"
+    },
+    "name": "Frierson Library",
+    "addressString": "24 Randolph Street, Frierson, TX",
+    "favorite": false
+  },
+  {
+    "id": 4,
+    "address": {
+      "street": "78 Village Road",
+      "city": "Hebron",
+      "state": "TX"
+    },
+    "name": "Hebron Library",
+    "addressString": "78 Village Road, Hebron, TX",
+    "favorite": false
+  },
+  {
+    "id": 5,
+    "address": {
+      "street": "15 Howard Place",
+      "city": "Barstow",
+      "state": "TX"
+    },
+    "name": "Barstow Library",
+    "addressString": "15 Howard Place, Barstow, TX",
+    "favorite": false
+  },
+  {
+    "id": 6,
+    "address": {
+      "street": "9 Malbone Street",
+      "city": "Faxon",
+      "state": "TX"
+    },
+    "name": "Faxon Library",
+    "addressString": "9 Malbone Street, Faxon, TX",
+    "favorite": false
+  },
+  {
+    "id": 7,
+    "address": {
+      "street": "83 Cropsey Avenue",
+      "city": "Kennedyville",
+      "state": "TX"
+    },
+    "name": "Kennedyville Library",
+    "addressString": "83 Cropsey Avenue, Kennedyville, TX",
+    "favorite": false
+  },
+  {
+    "id": 8,
+    "address": {
+      "street": "83 Dooley Street",
+      "city": "Accoville",
+      "state": "TX"
+    },
+    "name": "Accoville Library",
+    "addressString": "83 Dooley Street, Accoville, TX",
+    "favorite": false
+  },
+  {
+    "id": 9,
+    "address": {
+      "street": "69 Arkansas Drive",
+      "city": "Fidelis",
+      "state": "TX"
+    },
+    "name": "Fidelis Library",
+    "addressString": "69 Arkansas Drive, Fidelis, TX",
+    "favorite": false
+  },
+  {
+    "id": 10,
+    "address": {
+      "street": "100 Stillwell Avenue",
+      "city": "Flintville",
+      "state": "TX"
+    },
+    "name": "Flintville Library",
+    "addressString": "100 Stillwell Avenue, Flintville, TX",
+    "favorite": false
+  }
+]
