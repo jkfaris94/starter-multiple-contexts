@@ -13,7 +13,7 @@ function Book({ book, handleReserveButton }) {
 
   return (
     <article
-      className="border rounded d-flex flex-column"
+      className="border rounded d-flex flex-column flex-grow-1"
       style={{ width: "48%" }}
     >
       <img
@@ -22,7 +22,10 @@ function Book({ book, handleReserveButton }) {
         className="object-fit-cover"
         style={{ maxHeight: "150px" }}
       />
-      <section className="p-3 d-flex flex-column justify-content-between">
+      <section
+        className="p-3 d-flex flex-column justify-content-between"
+        style={{ height: "100%" }}
+      >
         <div className="mb-3">
           <h2 className="fs-5 mb-0">{book.title}</h2>
           <span className="badge text-bg-dark my-2">{book.genre}</span>
