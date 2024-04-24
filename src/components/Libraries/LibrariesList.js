@@ -3,9 +3,24 @@ import Library from "./Library";
 import { LibrariesContext } from "../../contexts/LibrariesContext";
 
 function LibrariesList() {
-  const { libraries } = useContext(LibrariesContext);
+  const { libraries, setLibraries } = useContext(LibrariesContext);
+
+  const handleFavoriteLibrary = (libraryId) => {
+    const selected = libraries.find((library) => library.id === libraryId);
+    const index = libraries.indexOf(selected);
+    setLibraries([
+      ...libraries.slice(0, index),
+      { ...selected, favorite: !selected.favorite },
+      ...libraries.slice(index + 1),
+    ]);
+  };
+
   const listItems = libraries.map((library) => (
-    <Library key={library.id} library={library} />
+    <Library
+      key={library.id}
+      library={library}
+      handleFavoriteLibrary={handleFavoriteLibrary}
+    />
   ));
 
   return (

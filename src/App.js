@@ -14,8 +14,8 @@ function App() {
       <Header />
       <main className="container mt-5">
         <div className="row">
-          <BooksList />
           <LibrariesContextProvider initialData={librariesData}>
+            <BooksList />
             <LibrariesList />
           </LibrariesContextProvider>
         </div>
