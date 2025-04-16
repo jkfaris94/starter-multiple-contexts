@@ -4,7 +4,7 @@ import { LibrariesContext } from "../../contexts/LibrariesContext";
 
 
 function LibrariesList() {
-  const { libraries, setLibraries } = useContext(LibrariesContext)
+  const { libraries, setLibraries } = useContext(LibrariesContext);
 
   const handleFavoriteLibrary = (libraryId) => {
     const selected = libraries.find((library) => library.id === libraryId);

@@ -1,4 +1,9 @@
+import { useContext } from "react";
+import { LibrariesContext } from "../../contexts/LibrariesContext";
+
 function Book({ book, handleReserveButton }) {
+  const { libraries } = useContext(LibrariesContext);
+  const library = libraries.find((library) => book.libraryId === library.id);
   const reserveBookButton = (
     <li>
       <button
@@ -42,6 +47,16 @@ function Book({ book, handleReserveButton }) {
               </span>
             </li>
             {!book.borrowed && reserveBookButton}
+            <li>
+              Located at the{" "}
+              {library ? (
+                <span className={library.favorite ? "text-success" : "text-secondary"}>
+                  {library.name}
+                </span>
+              ) : (
+                <span className="text-danger">Unknown Library</span>
+              )}
+            </li>
           </ul>
         </aside>
       </section>
