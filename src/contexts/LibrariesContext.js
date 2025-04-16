@@ -5,7 +5,7 @@ export const LibrariesContext = createContext({
     setLibraries: () => {},
 });
 
-export function LibrariesContextProvider({ initialData, children }) {
+export function LibrariesContextProvider({ initialData = [], children }) {
     const [libraries, setLibraries] = useState(initialData);
     return (
         <LibrariesContext.Provider value={{ libraries, setLibraries }}>

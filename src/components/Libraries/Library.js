@@ -1,6 +1,6 @@
-function Library({ library }) {
+function Library({ library, handleFavoriteLibrary }) {
   const favoriteButton = (
-    <button type="button" className="btn p-0">
+    <button type="button" className="btn p-0" onClick={() => handleFavoriteLibrary(library.id)}>
       <small>{library.favorite ? "♥︎" : "♡"}</small>
     </button>
   );

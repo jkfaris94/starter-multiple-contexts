@@ -6,6 +6,7 @@ import { BooksContextProvider } from "./contexts/BooksContext";
 import booksData from "./data/books.json";
 
 import librariesData from "./data/libraries.json";
+import { LibrariesContextProvider } from "./contexts/LibrariesContext";
 
 function App() {
   return (
@@ -14,7 +15,9 @@ function App() {
       <main className="container mt-5">
         <div className="row">
           <BooksList />
-          <LibrariesList libraries={librariesData} />
+          <LibrariesContextProvider libraries={librariesData}>
+            <LibrariesList />
+          </LibrariesContextProvider>
         </div>
       </main>
     </BooksContextProvider>
